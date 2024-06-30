@@ -1,0 +1,58 @@
+.input-wrapper {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 25px; /* More rounded border */
+  padding: 0 15px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+  font-family: "ALEGREYA-NORMAL"; /* Set the font family for input */
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: royalblue;
+}
+
+.results-list {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0;
+  position: absolute; /* Position the results list absolutely */
+  top: 50px; /* Adjust based on your header height */
+  left: 0;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.search-result {
+  padding: 10px 20px;
+  font-family: "ALEGREYA-NORMAL"; /* Set the font family for results */
+}
+
+.search-result:hover {
+  background-color: #efefef;
+}
+
+.results-list .search-result:not(:last-child) {
+  border-bottom: 1px solid #ddd; /* Add line between results */
+}

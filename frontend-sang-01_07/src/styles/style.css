@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'DFVN Lucky Skirt';
+    src: url('/fonts/DFVN Lucky Skirt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ALEGREYA-REGULAR';
+    src: url('/fonts/ALEGREYA-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'ALEGREYA-SEMIBOLD';
+    src: url('/fonts/ALEGREYA-SEMIBOLD.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'ALEGREYA-NORMAL';
+    src: url('/fonts/Alegreya-VariableFont_wght.ttf') format('truetype');
+}
+body {
+    font-family: 'ALEGREYA-NORMAL', 'Roboto', 'Arial', sans-serif;
+}
+
+
+
+.alegreya-regular {
+    font-family: 'ALEGREYA-REGULAR', 'Roboto', 'Arial', sans-serif;
+}
+
+.alegreya-semibold {
+    font-family: 'ALEGREYA-SEMIBOLD', 'Roboto', 'Arial', sans-serif;
+}
+.alegreya-normal {
+    font-family: 'ALEGREYA-NORMAL', 'Roboto', 'Arial', sans-serif;
+}
+
+.horizontal-slider {
+    width: 100%;
+    height: 25px;
+    margin: 15px 0;
+}
+
+.example-thumb {
+    height: 25px;
+    width: 25px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.example-track {
+    top: 0;
+    bottom: 0;
+    background: #ddd;
+    border-radius: 999px;
+}
+
+.transition-transform {
+    transition: transform 0.3s;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.rotate-180 {
+    transform: rotate(-135deg);
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.hover\:opacity-100:hover {
+    opacity: 1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.banner {
+    position: relative;
+    display: block;
+}
+
+.banner-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.banner-arrow {
+    position: absolute;
+    opacity: 0;
+    /* Arrows are initially invisible */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for opacity */
+    width: 50px;
+    /* Set a specific width for the hit area */
+    height: 50px;
+    /* Set a specific height for the hit area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    /* Cover the area with the image */
+    background-position: center;
+    /* Center the background image */
+    cursor: pointer;
+    /* Makes the arrow clickable */
+}
+
+.left-arrow {
+    left: 10px;
+    background-image: url('/images/left-arrow.png');
+    /* Path to your left arrow image */
+}
+
+.right-arrow {
+    right: 10px;
+    background-image: url('/images/right-arrow.png');
+    /* Path to your right arrow image */
+}
+
+.banner:hover .banner-arrow {
+    opacity: 1;
+    /* Arrows become visible when the banner is hovered over */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns each taking one third of the width */
+    gap: 20px;
+    /* Space between the columns and rows */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Padding around the entire grid */
+}
+
+.grid-item img {
+    width: 100%;
+    /* Image will take the full width of the column */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Specific sizes for different rows using nth-child selector */
+.image-grid div:nth-child(3n+1) img {
+    /* First image in every row */
+    height: 267px;
+    /* Set specific height */
+
+}
+
+.image-grid div:nth-child(3n+2) img {
+    /* Second image in every row */
+    height: 267px;
+    /* Set specific height */
+}
+
+.image-grid div:nth-child(3n+3) img {
+    /* Third image in every row */
+    height: 267px;
+    /* Set specific height */
+}
+
+.image-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns each taking one third of the width */
+    gap: 20px;
+    /* Space between the columns and rows */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* Padding around the entire grid */
+}
+
+.grid-item2 img {
+    width: 100%;
+    /* Image will take the full width of the column */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+}
+
+.image-grid2 div:nth-child(3n+1) img {
+    /* First image in every row */
+    height: 500px;
+    /* Set specific height */
+
+}
+
+.image-grid2 div:nth-child(3n+2) img {
+    /* Second image in every row */
+    height: 500px;
+    /* Set specific height */
+}
+
+.image-grid2 div:nth-child(3n+3) img {
+    /* Third image in every row */
+    height: 500px;
+    /* Set specific height */
+}
+
+
+/* Specific sizes for different rows using nth-child selector */
+
+
+/* src/styles/cart.css */
+/* src/styles/cart.css */
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cart-items,
+.order-summary {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.order-summary {
+    flex-basis: 300px;
+    margin-right: 0;
+}
+
+.total-details {
+    margin-top: 20px;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+.clear-cart,
+.remove-item {
+    background-color: gray;
+}
+
+.checkout-button {
+    background-color: red;
+}
+
+/*ABOUT US*/
+.about-us-section {
+    background-color: #fff;
+    color: #333;
+    font-family: ALEGREYA-REGULAR, Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .content-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-us-text, .about-us-quote {
+    text-align: left;
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+   
+  }
+  
+  .about-us-images {
+    flex: 1;
+    height: auto; /* Adjust this value as needed */
+  }
+  
+  .about-us-images img {
+    width: 100%;
+    max-height: 300px; /* Set a maximum height for images */
+    object-fit: cover; /* Ensures the image covers the area, can be adjusted to 'contain' if you want to see the whole image */
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  blockquote {
+    font-style: italic;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-left: 5px solid #ccc;
+  }
+  
+  blockquote span {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .quote-block {
+    position: relative;
+    text-align: left;
+    margin: 40px 0;
+    font-family: ALEGREYA-REGULAR,'Georgia', serif;
+    color: #333;
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 0 10px;  
+  }
+  
+  .quote-block:before{
+    content: '“'; /* Left double quotation mark */
+    font-size: 60px;
+    position: absolute;
+    top: -10px; /* Adjust this value if necessary */
+    color: black;
+  }
+  
+
+  
+  .quote-block:before {
+    left: -20px; /* Adjust this value if necessary */
+  }
+  
+ 
+  
+  .quote-author {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+  }
+
+/* Add these styles to your CSS file */
+.toggleArrow {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    right: -5px; /* Adjust based on your layout */
+}
+
+.toggleArrow::before, .toggleArrow::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    transition: transform 0.2s ease;
+}
+
+.toggleArrow::before {
+    top: 0;
+    left: 2px;
+    width: 2px;
+    height: 10px;
+}
+
+.toggleArrow::after {
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 2px;
+}
+
+.toggleArrow.open::before {
+    transform: rotate(90deg);
+}
+
+.toggleArrow.open::after {
+    transform: rotate(180deg);
+    width: 2px;
+    height: 10px;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+  .shopping-cart-item {
+    position: relative;
+}
+
+hr.border-dashed {
+    border-style: dashed;
+}

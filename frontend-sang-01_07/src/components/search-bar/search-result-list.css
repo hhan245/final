@@ -1,0 +1,11 @@
+.results-list {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; /* Add border-radius to the list container */
+  margin-top: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0; /* Ensure no padding around the list */
+}
